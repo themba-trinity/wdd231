@@ -1,11 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+    <title>WDD 231 - Home page - Thembinkosi Gumbo</title>
+    <meta name="description" content="WDD 231 Home Page For web Frontend Development">
+    <meta name="author" content="Thembinkosi Gumbo">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
+
 <body>
-   <P>Thembinkosi Gumbo | wdd231</P> 
+    <header>
+        <img src="images/logo.svg" alt="Site Logo" width="40" height="40">
+        <span>Thembinkosi Gumbo</span>
+        <button id="nav-button" class="hamburger" aria-label="navigation">&#9776;</button>
+        <nav id="animatene">
+            <ul class="navigation">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="chamber.html">Chamber</a></li>
+                <li><a href="final.html">Final</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <div class="main-grid">
+            <section>
+                <h2>About Me</h2>
+                <p>My name is Thembinkosi Gumbo from Zimbabwe and i am currently live in Cape Town, South Africa.
+                    I am studying Web developments at BYU-Idaho and i love building responsive websites.
+                </p>
+            </section>
+            <section>
+                <h2>Student Photo</h2>
+                <img src="images/themba.jpg" alt="Student Photo" class="Profile" width="200" height="200"
+                    loading="lazy">
+            </section>
+
+        </div>
+        <section class="certificate">
+            <h2>Web Certificate Courses</h2>
+            <div class="filters">
+                <button id="all">All Courses</button>
+                <button id="wdd">WDD Courses</button>
+                <button id="cse">CSE Courses</button>
+
+            </div>
+            <div id="courses">
+                <p>The total credits for courses listed above is <span id="totalCredits">0</span></p>
+
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="social">
+            <a href="" target="_blank"><img src="images/github.svg" alt="GitHub" width="32" height="32"></a>
+            <a href="" target="_blank"><img src="images/linkedin.svg" alt="Linkedin" width="32" height="32"></a>
+            <a href="" target="_blank"><img src="images/instagram.svg" alt="Instagram" width="32" height="32"></a>
+            <a href="" target="_blank"><img src="images/facebook.svg" alt="Facebook" width="32" height="32"></a>
+
+        </div>
+        <p>&copy; <span id="currentyear"></span> Thembinkosi Gumbo - South Africa</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
+
 </html>

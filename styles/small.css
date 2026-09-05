@@ -1,0 +1,145 @@
+:root {
+    --primary-color: #1D3557;
+    --secondary-color: #457B9D;
+    --accent-color: #FFB703;
+    --background-color: #F1FAEE;
+    --text-color: #1D1D1D;
+    --heading-font: "Montserrat", sans-serif;
+    --body-font: "Open Sans", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+header span {
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#menu {
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+
+nav {
+    display: none;
+    background-color: var(--secondary-color);
+}
+
+nav.open {
+    display: block;
+}
+
+.navigation {
+    list-style: none;
+}
+
+.navigation li a {
+    display: block;
+    padding: 0.75rem 1rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navigation li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+main {
+    max-width: 1000px;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+}
+
+section {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-family: var(--heading-font);
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 4px;
+}
+
+
+.certificate {
+    text-align: center;
+
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.filters button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.filters button:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+}
+
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+

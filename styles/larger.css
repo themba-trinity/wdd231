@@ -1,0 +1,18 @@
+@media (min-width: 640px) {
+    #nav-button {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: center;
+    }
+
+    .navigation li a.active {
+        border-bottom: 3px solid var(--accent-color);
+    }
+}
