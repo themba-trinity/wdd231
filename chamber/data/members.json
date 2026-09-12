@@ -1,0 +1,65 @@
+ [
+    {
+        "name": "Bo-Kaap",
+        "address": "Wale Street, Bo-Kaap",
+        "phone": "+27 21 555 3565",
+        "website": "https://bo-kaap.org",
+        "image": "https://thelivingjourneycollection.co.za/wp-content/uploads/2022/09/Rectangle-48@2x.jpg",
+        "membership": "1",
+        "description": "Colorful houses and authentic Cape Malay cuisine"
+    },
+    {
+        "name": "V&A Waterfront",
+        "address": "19 Deck Road Waterfront",
+        "phone": "+27 21 765 9878",
+        "website": "https://www.waterfront.co.za",
+        "image": "https://cdn.tollbrothers.com/search/metro/vancouver/vancouver_waterfront_858.webp",
+        "membership": "3",
+        "description": "Shopping and Food hub"
+    },
+    {
+        "name": "Table Mountain Cableway",
+        "address": "Tafelberg, Cape Town",
+        "phone": "+27 21 454 9876",
+        "website": "https://www.tablemountain.net",
+        "image": "https://tse4.mm.bing.net/th/id/OIP.m8obrpso2J2cVb9c5kj3FQHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+        "membership": "3",
+        "description": "Cable car to the top of the Mountain"
+    },
+    {
+        "name": "Cape Town Coffee",
+        "address": "Kloof Street Gardens",
+        "phone": "+27 21 546 7654",
+        "website": "https://www.findlocal.com",
+        "image": "https://tse1.mm.bing.net/th/id/OIP.HMLi8DEUyjQAnk7GkC-0WwHaFj?r=0&w=1600&h=1200&rs=1&pid=ImgDetMain&o=7&rm=3",
+        "membership": "2",
+        "description": "For all Coffee roasters"
+    },
+    {
+        "name": "Two Oceans Aquarium",
+        "address": "Dock Road Waterfront",
+        "phone": "+27 21 555 3654",
+        "website": "https://www.aqurium.co.za",
+        "image": "https://tse1.mm.bing.net/th/id/OIP.m7YXYfGqHq-77y_9Ki6NKwHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+        "membership": "2",
+        "description": "Marine life"
+    },
+    {
+        "name": "Oranjezicht Market",
+        "address": "Granger Bay, Waterfront",
+        "phone": "+27 21 564 8765",
+        "website": "https://ozcf.co.za",
+        "image": "https://media-cdn.tripadvisor.com/media/photo-s/16/e3/0f/96/fresh-figs.jpg",
+        "membership": "2",
+        "description": "Farmers Market every weekend"
+    },
+    {
+        "name": "Slave Museum",
+        "address": "48 Coronation Road, Cape Town",
+        "phone": "+27 21 675 9870",
+        "website": "https://slaveheritagemuseum.org",
+        "image": "https://tse3.mm.bing.net/th/id/OIP.Mi1ZUmszR6eFyAZu_cMupgHaE-?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+        "membership": "3",
+        "description": "Explore the long history"
+    }
+]
