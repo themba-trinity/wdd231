@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cape Town Chamber Directory</title>
-    <meta name="description" content=" Business Directory for Cape Town Chamber of Commerce">
+    <title>Cape Town Chamber of Commerce - Home</title>
+    <meta name="description" content="Welcome to Cape Town Chamber of Commerce - Supporting local businesses">
     <meta name="author" content="Thembinkosi Gumbo">
 
     <meta property="og:title" content="Cape Town Chamber Directory">
@@ -25,6 +25,8 @@
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/members.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
 
 </head>
 
@@ -46,12 +48,40 @@
         </nav>
     </header>
     <main>
-        <h1>Directory</h1>
-        <div class="view-toggle">
-            <button id="grid" class="active">Grid View</button>
-            <button id="list">List View</button>
+        <section class="hero">
+            <img src="images/table-mountain.jpg" alt="Cape Town Table Mountain" width="1200" height="600">
+            <div class="hero-content">
+                <h2>Empowering Business in Cape Town</h2>
+                <a href="join.html" class="cta-button">Join the Chamber</a>
+
+            </div>
+        </section>
+        <div class="home-grid">
+            <section class="events">
+                <h2>Current Events</h2>
+                <div>
+                    <h3>Business Networking Breakfast</h3>
+                    <p>Join us on October 1st 2026 at 10am at the Waterfront for Business Networking.</p>
+                </div>
+                <div>
+                    <h3>Small Business Workshop</h3>
+                    <p>Learn more about digital marketing on October 15 2026. Entry is free for all members.</p>
+                </div>
+
+            </section>
+            <section class="weather">
+                <h2>Weather</h2>
+                <img src="images/weather-icon.jpg" alt="weather icon">
+                <div id="weather-current"></div>
+                <div id="weather-forecast"></div>
+
+            </section>
+            <section class="spotlight">
+                <h2>Member Spotlight</h2>
+                <div id="spotlight-container"></div>
+
+            </section>
         </div>
-        <div id="members" class="grid"></div>
     </main>
     <footer>
         <div class="grid">
