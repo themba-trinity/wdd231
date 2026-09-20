@@ -7,28 +7,19 @@
     --heading-font: "Montserrat", sans-serif;
     --body-font: "Open Sans", sans-serif;
 }
-
-
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-
-
 body {
     font-family: var(--body-font);
     background-color: var(--background-color);
     color: var(--text-color);
 }
-
-
-
-
 header {
-    display: flex;
+    display: grid;
     background-color: var(--primary-color);
     gap: 1rem;
     color: white;
@@ -56,51 +47,33 @@ header div span {
     font-size: 1.7rem;
     color: white;
     display: block;
-
-
-
 }
-
-
-
 #menu.open::before {
     content: "X";
 }
-
-
-
 nav {
     background-color: var(--secondary-color);
 }
-
-
-
 nav ul {
+    display: grid;
     gap: 1rem;
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
 }
-
-
-
 .navigation a {
-    display: block;
+    
+    display: grid;
     padding: 0.8rem 1rem;
     color: white;
     text-decoration: none;
 }
 
-
-
 .navigation a:hover,
 .navigation a.active {
     background: rgba(0, 0, 0, 0.3);
 }
-
-
-
 main {
     position: relative;
     text-align: center;
@@ -109,41 +82,26 @@ main {
     margin: 0 auto;
     padding: 1rem;
 }
-
-
-
 h1 {
     color: var(--primary-color);
     font-family: var(--heading-font);
     margin-bottom: 1rem;
 }
-
-
-
 #members.grid {
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
-
-
-
 #members.list {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
-
-
-
 .member-card {
     background: white;
     padding: 1rem;
     border-radius: 4px;
 }
-
-
-
 #members.list .member-card {
     display: grid;
     grid-template-columns: 100px 1fr 1fr;
@@ -165,22 +123,14 @@ h1 {
     font-family: var(--heading-font);
 }
 
-
-
 .member-card p {
     font-size: 0.9rem;
     margin: 0.2rem 0;
 }
-
-
-
 .member-card a {
     color: var(--secondary-color);
     font-weight: 600;
 }
-
-
-
 .hero {
     position: relative;
     margin: 0;
@@ -188,17 +138,11 @@ h1 {
     border-radius: 0;
     overflow: hidden;
 }
-
-
-
 .hero img {
     width: 100%;
     height: auto;
     display: block;
 }
-
-
-
 .hero-content {
     position: absolute;
     bottom: 20%;
@@ -208,17 +152,12 @@ h1 {
     border-radius: 8px;
     color: white;
 }
-
-
-
 .hero-content h2 {
     background: none;
     margin: 0 0 0.5rem 0;
     padding: 0;
     font-size: 1.2rem;
 }
-
-
 
 .cta-button {
     display: inline-block;
@@ -229,21 +168,12 @@ h1 {
     text-decoration: none;
     font-weight: 700;
 }
-
-
-
 .cta-button:hover {
     background: white;
 }
-
-
-
 .home-grid section {
     margin-bottom: 1rem;
 }
-
-
-
 #weather-current {
     display: flex;
     align-items: center;
@@ -253,19 +183,14 @@ h1 {
     margin: 1rem 0;
 }
 
-
-
 #weather-current img {
-    background: var(--secondary);
+    background: var(--secondary-color);
     border-radius: 50%;
     display: block;
     width: 60%;
     height: 60%;
     padding: 4px;
 }
-
-
-
 #weather-forecast {
     display: flex;
     justify-content: center;
@@ -274,21 +199,13 @@ h1 {
     border-top: 1px solid #ddd;
     padding-top: 0.5rem;
 }
-
-
-
 #weather-forecast div {
     font-size: 0.9rem;
 }
-
-
-
 #spotlight-container {
     display: grid;
     gap: 1rem;
 }
-
-
 
 .spotlight-card {
     background: var(--bg);
@@ -298,47 +215,29 @@ h1 {
     padding: 1rem;
     text-align: center;
 }
-
-
-
 .spotlight-card img {
     width: 100px;
     height: 60px;
     object-fit: contain;
 }
-
-
-
 .spotlight-card h3 {
     color: var(--primary);
     font-size: 1.1rem;
     margin: 0.5rem 0;
 }
-
-
-
 .spotlight-card p {
     font-size: 0.85rem;
 }
-
-
-
 .spotlight-card .level {
     font-weight: 700;
     color: var(--secondary);
 }
-
-
-
 footer {
     background-color: var(--primary-color);
     color: white;
     padding: 1.5rem 1rem;
     margin-top: 2rem;
 }
-
-
-
 .footer-grid {
     display: flex;
     justify-content: space-between;
@@ -349,63 +248,38 @@ footer {
     margin: 0 auto;
     width: 100%;
 }
-
-
-
 .footer-grid>div {
     flex: 1;
 }
-
-
-
 .social {
     display: flex;
     gap: 1rem;
     justify-content: flex-end;
 }
-
-
-
-
-@media (max-width: 1200px) {
+@media (min-width: 768px) {
     #menu {
         display: none;
-
-
-
     }
 
+    .navigation {
+        display: grid;
+        list-style: none;
 
-
+    }
     nav ul {
-        display: none;
+        display: flex;
         flex-direction: column;
         text-align: center;
     }
-
-
-
     nav.open ul {
         display: flex;
-
-
-
     }
-
-
-
     .footer-grid {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-
-
-
     }
-
-
-
     .social {
         justify-content: center;
     }
