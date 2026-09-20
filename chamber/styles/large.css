@@ -1,51 +1,32 @@
-#menu {
-    display: block;
-
-}
-
-.navigation {
-    display: none;
-
-}
-
-@media screen and (min-width: 380px) {
+@media (min-width: 768px) {
     #menu {
         display: none;
-
-    }
-
-    nav {
-        grid-template-columns: 1fr;
-
     }
 
     .navigation {
+        display: grid;
+        list-style: none;
+
+    }
+
+    nav ul {
         display: flex;
-
-    }
-
-    .navigation li {
-        flex: 1;
-
-    }
-
-    .navigation a {
+        flex-direction: column;
         text-align: center;
+    }
 
+    nav.open ul {
+        display: flex;
     }
 
     .footer-grid {
-        grid-template-columns: 1fr 1fr 1fr;
-
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 
-    #members.list .member-card img {
-        display: block;
-        width: 60px;
-        height: 60px;
-        object-fit: cover;
-
+    .social {
+        justify-content: center;
     }
-
-
 }
