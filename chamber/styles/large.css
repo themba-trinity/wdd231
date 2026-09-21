@@ -6,26 +6,20 @@
     .navigation {
         display: grid;
         list-style: none;
-
     }
-
     nav ul {
-        display: grid;
+        display: flex;
         flex-direction: row;
         text-align: center;
     }
-
     nav.open ul {
-        display: block;
+        display: flex;
     }
-
     .footer-grid {
-        display: grid;
-        flex-direction: row;
+        display: flex;
         justify-content: space-between;
         align-items: center;
     }
-
     .social {
         justify-content: center;
     }
