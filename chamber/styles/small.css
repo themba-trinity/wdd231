@@ -52,19 +52,19 @@ header div span {
     content: "X";
 }
 nav {
+    display: flex;
+    flex-direction: row;
     background-color: var(--secondary-color);
 }
 nav ul {
-    display: grid;
     gap: 1rem;
     list-style: none;
-    display: flex;
     flex-direction: row;
     justify-content: flex-start;
 }
 .navigation a {
-    
-    display: grid;
+    display: flex;
+    flex-direction: row;
     padding: 0.8rem 1rem;
     color: white;
     text-decoration: none;
@@ -174,6 +174,11 @@ h1 {
 .home-grid section {
     margin-bottom: 1rem;
 }
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
 #weather-current {
     display: flex;
     align-items: center;
@@ -235,7 +240,7 @@ h1 {
 footer {
     display: flex;
     gap: 1rem;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: var(--primary-color);
     color: white;
@@ -243,13 +248,16 @@ footer {
     margin-top: 2rem;
 }
 .footer-grid {
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
     gap: 1rem;
     max-width: 1200px;
     margin: 0 auto;
     width: 100%;
 }
 .footer-grid>div {
-    flex: 1;
+    flex: 1 1 200px;
 }
 .social {
     display: flex;

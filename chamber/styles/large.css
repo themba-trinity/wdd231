@@ -1,5 +1,5 @@
 @media (min-width: 768px) {
-    #menu {
+    #nav-menu {
         display: none;
     }
 
@@ -10,17 +10,17 @@
     }
 
     nav ul {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        flex-direction: row;
         text-align: center;
     }
 
     nav.open ul {
-        display: flex;
+        display: block;
     }
 
     .footer-grid {
-        display: flex;
+        display: grid;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
