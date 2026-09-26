@@ -9,7 +9,7 @@
     }
     nav ul {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         text-align: center;
     }
     nav.open ul {
@@ -23,4 +23,12 @@
     .social {
         justify-content: center;
     }
+}
+.join-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
+}
+.membership-card {
+    position: sticky;
+    top: 1rem;
 }
