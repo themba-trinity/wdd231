@@ -3,32 +3,34 @@
         display: none;
     }
 
-    .navigation {
-        display: grid;
-        list-style: none;
-    }
+    .navigation,
     nav ul {
         display: flex;
         flex-direction: row;
         text-align: center;
         gap: 1rem;
     }
-    nav.open ul {
-        display: flex;
-    }
+
     .footer-grid {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
+
     .social {
         justify-content: center;
     }
+
+    .navigation {
+        list-style: none;
+    }
 }
+
 .join-container {
     grid-template-columns: 1fr 1fr 1fr;
     align-items: start;
 }
+
 .membership-card {
     position: sticky;
     top: 1rem;

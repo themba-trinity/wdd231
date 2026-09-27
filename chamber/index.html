@@ -18,10 +18,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400&display=swap"
         rel="stylesheet">
-
     <link rel="stylesheet" href="styles/large.css">
     <link rel="stylesheet" href="styles/small.css">
-
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/members.js" defer></script>
@@ -55,7 +53,6 @@
             <div class="hero-content">
                 <h1>Empowering Business in Cape Town</h1>
                 <a href="join.html" class="cta-button">Join the Chamber</a>
-
             </div>
         </section>
         <div class="home-grid">
@@ -69,18 +66,15 @@
                     <h3>Small Business Workshop</h3>
                     <p>Learn more about digital marketing on October 15 2026. Entry is free for all members.</p>
                 </div>
-
             </section>
             <section class="weather">
                 <h2>Weather</h2>
                 <div id="weather-current"></div>
                 <div id="weather-forecast"></div>
-
             </section>
             <section class="spotlight">
                 <h2>Member Spotlight</h2>
                 <div id="spotlight-container"></div>
-
             </section>
         </div>
     </main>
@@ -100,13 +94,13 @@
                         width="32"></a>
                 <a href="https://facobook.com" target="_blank"><img src="images/facebook.svg" alt="facebook"
                         width="32"></a>
-
             </div>
             <div>
                 <p>WDD231 Class Project</p>
                 <p>Thembinkosi Gumbo</p>
                 <p>&copy; <span id="currentyear"></span>Cape Town Chamber</p>
                 <p id="lastModified"></p>
+                <script>document.getElementById("lastModified").textContent = document.lastModified</script>
             </div>
         </div>
     </footer>

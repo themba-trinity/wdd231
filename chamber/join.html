@@ -4,15 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cape Town Chamber Directory</title>
+    <title> Join Cape Town chamber</title>
     <meta name="description" content=" Business Directory for Cape Town Chamber of Commerce">
     <meta name="author" content="Thembinkosi Gumbo">
-
     <meta property="og:title" content="Cape Town Chamber Directory">
     <meta property="og:description" content="Find local businesses and members of the Cape Town Chamber of Commerce">
     <meta property="og:image" content="https://themba-trinity.github.io/wdd231/chamber/images/og-images.webp">
     <meta property="og:url" content="https://themba-trinity.github.io/wdd231/chamber/directory.html">
-
     <link rel="icon" href="images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,9 +21,8 @@
     <link rel="stylesheet" href="styles/small.css">
 
     <script src="scripts/join.js" defer></script>
-
+    <script src="scripts/dates.js" defer></script>
 </head>
-
 <body>
     <header>
         <img src="images/logo.svg" alt="Cape Town Chamber logo" width="50" height="50">
@@ -62,11 +59,11 @@
                 </label>
                 <label>Email:
                     <input type="text" name="email" title="Enter your email address here" autocomplete="email"
-                        placeholder="truestory@email.com"required>
+                        placeholder="truestory@email.com" required>
                 </label>
                 <label>Phone Number:
-                    <input type="text" name="Phone-number" title="Enter your phone number here"
-                        autocomplete="Phone-number" required>
+                    <input type="text" name="PhoneNumber" title="Enter your phone number here"
+                        autocomplete="PhoneNumber" required>
                 </label>
                 <label>Business/Organization Name:
                     <input type="text" name="organizationName" title="Enter your Business name"
@@ -186,6 +183,7 @@
                 <p>Thembinkosi Gumbo</p>
                 <p>&copy; <span id="currentyear"></span>Cape Town Chamber</p>
                 <p id="lastModified"></p>
+                <script>document.getElementById("lastModified").textContent = document.lastModified</script>
             </div>
         </div>
     </footer>
