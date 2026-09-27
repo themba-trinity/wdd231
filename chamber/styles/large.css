@@ -9,8 +9,9 @@
     }
     nav ul {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         text-align: center;
+        gap: 1rem;
     }
     nav.open ul {
         display: flex;
