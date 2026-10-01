@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cape Town Chamber Directory</title>
+    <meta name="description" content=" Business Directory for Cape Town Chamber of Commerce">
+    <meta name="author" content="Thembinkosi Gumbo">
+
+    <meta property="og:title" content="Cape Town Chamber Directory">
+    <meta property="og:description" content="Find local businesses and members of the Cape Town Chamber of Commerce">
+    <meta property="og:image" content="https://themba-trinity.github.io/wdd231/chamber/images/og-images.webp">
+    <meta property="og:url" content="https://themba-trinity.github.io/wdd231/chamber/directory.html">
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/small.css">
+
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/members.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/chamber.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.svg" alt="Cape Town Chamber logo" width="50" height="50">
+        <div>
+            <span>Cape Town</span>
+            <p>Chamber of Commerce</p>
+        </div>
+        <button id="nav-button" class="hamburger" aria-label="navigation">&#9776;</button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="discover-main">
+        <h1>Discover Cape Town</h1>
+        <div id="visitMessag" class="visit-message"></div>
+        <div class="discover-introduction">
+            <p>Cape town, South Africa with about 5,06 million people and a touristic destination in the southern Africa
+                and more than 25000 chamber of commerce.</p>
+                <div id="dicoverCards" class="discover-grid"></div>
+
+        </div>
+
+    </main>
+    <footer>
+        <div class="grid">
+            <div>
+                <p><strong>Cape Town Chamber of Commerce</strong></p>
+                <p>16 On Bree Street, Cape Town, 8001</p>
+                <p>info@capetowncc.org</p>
+                <p>+27 21 555 2354</p>
+            </div>
+            <div class="social">
+                <a href="https://guthub.com" target="_blank"><img src="images/github.svg" alt="github" width="32"></a>
+                <a href="https://linkedin.com" target="_blank"><img src="images/linkedin.svg" alt="linkedin"
+                        width="32"></a>
+                <a href="https://instagram.com" target="_blank"><img src="images/instagram.svg" alt="instagram"
+                        width="32"></a>
+                <a href="https://facobook.com" target="_blank"><img src="images/facebook.svg" alt="facebook"
+                        width="32"></a>
+
+            </div>
+            <div>
+                <p>WDD231 Class Project</p>
+                <p>Thembinkosi Gumbo</p>
+                <p>&copy; <span id="currentyear"></span>Cape Town Chamber</p>
+                <p id="lastModified"></p>
+                <script>document.getElementById("lastModified").textContent = document.lastModified</script>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
