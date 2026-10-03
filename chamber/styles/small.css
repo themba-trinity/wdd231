@@ -428,6 +428,93 @@ dialog button {
     animation-delay: 0.7s;
 }
 
+.discover-main h1 {
+    text-align: center;
+}
+
+.visit-message {
+    background: #F4A261;
+    color: #1A2E40;
+    font-weight: 700;
+    text-align: center;
+    padding: 0.8rem;
+    border-radius: 6px;
+    margin: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.discover-intro {
+    text-align: center;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+}
+
+.discover-grid {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    grid-template-areas:
+        "market"
+        "nature"
+        "island"
+        "table-mountain"
+        "camp"
+        "mountain"
+        "city-centre"
+        "ocean";
+}
+
+.discover-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.discover-card h2 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.discover-card figure {
+    margin: 0 0 0.5rem;
+}
+
+.discover-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+}
+
+.discover-card address {
+    font-style: italic;
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.discover-card p {
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+}
+
+.discover-card button {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.discover-card button:hover {
+    background: var(--secondary);
+}
+
 @keyframes cardEntrance {
     from {
         transform: translateX(50px) scale(0.9);

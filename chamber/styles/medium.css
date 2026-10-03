@@ -1,0 +1,18 @@
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+    .discover-card {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "camp table-mountain"
+        "city-centre mountain"
+        "island ocean"
+        "nature market";
+    }
+    .discover-card img {
+        transition: transform 0.4s ease, filter 0.4s ease;
+    } 
+    .discover-card img:hover {
+        transform: scale(1.05);
+        filter: brightness(1.1) contrast(1.1) drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+    }
+    
+}
