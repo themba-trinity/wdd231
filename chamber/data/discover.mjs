@@ -63,4 +63,4 @@ export const attractions = [
         "image": "images/chapmans-peak-drive.jpg",
         "area": "Camp"
     }
-]
+];

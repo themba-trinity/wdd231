@@ -33,7 +33,7 @@ if (!lastVisit) {
     } else if (diffDays === 1) {
         messageDiv.textContent = "You last visited 1 day ago";
     } else {
-        messageDiv.textContent = "You last visited ${diffDays} days ago.";
+        messageDiv.textContent = 'You last visited ${diffDays} days ago.';
     }
 
 }

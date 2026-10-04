@@ -72,7 +72,7 @@ nav {
 
 .navigation a:hover,
 .navigation a.active {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgb(0 0 0 / 30%);
 }
 
 /* Main content */
@@ -100,11 +100,11 @@ dialog {
     border: 1px solid #ccc;
     border-radius: 8px;
     background-color: white;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 20px rgb(0 0 0 / 30%);
 }
 
 dialog::backdrop {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgb(0 0 0 / 50%);
 }
 
 dialog button {
@@ -112,10 +112,9 @@ dialog button {
     top: 23px;
     right: 23px;
     padding: 0.5rem 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid rgb(0 0 0 / 10%);
 }
 
-/* Modal content shared styles */
 .model-content,
 .Modal,
 .Modal-content {
@@ -144,47 +143,9 @@ dialog button {
     cursor: pointer;
 }
 
-/* Hero section */
-.hero {
-    position: relative;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-}
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.hero-content {
-    position: absolute;
-    bottom: 20%;
-    left: 5%;
-    padding: 1rem;
-    border-radius: 8px;
-    background-color: rgba(29, 53, 87, 0.85);
-    color: white;
-}
-
-.hero-content h2 {
-    margin: 0 0 0.5rem;
-    font-size: 1.2rem;
-}
-
-.cta-button {
-    display: inline-block;
-    padding: 0.6rem 1.2rem;
-    border-radius: 4px;
-    background-color: var(--accent-color);
-    color: var(--primary-color);
-    font-weight: 700;
-    text-decoration: none;
-}
-
-.cta-button:hover {
-    background-color: white;
+.hero-content ul {
+    margin-bottom: 1rem;
+    margin-left: 1.5rem;
 }
 
 /* Member directory */
@@ -233,6 +194,53 @@ dialog button {
 .member-card a {
     color: var(--secondary-color);
     font-weight: 600;
+}
+
+/* Hero section */
+.hero {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero-content {
+    position: absolute;
+    bottom: 20%;
+    left: 5%;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: rgb(29 53 87 / 85%);
+    color: white;
+}
+
+.hero-content h2 {
+    margin: 0 0 0.5rem;
+    font-size: 1.2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    background-color: white;
+}
+
+.home-grid section {
+    margin-bottom: 1rem;
 }
 
 /* Weather */
@@ -303,7 +311,7 @@ dialog button {
     font-weight: 700;
 }
 
-/* Join member card */
+/* join member card */
 .join-main h1 {
     text-align: center;
 }
@@ -317,7 +325,7 @@ dialog button {
     padding: 2rem;
     border-radius: 8px;
     background-color: white;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 6px rgb(0 0 0 / 10%);
 }
 
 .join-form label {
@@ -376,7 +384,7 @@ dialog button {
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
     text-align: center;
     opacity: 0;
     animation: cardEntrance 1s ease-out forwards;
@@ -421,19 +429,18 @@ dialog button {
 }
 
 .discover-main h1 {
-    color: #1d1d1d;
     text-align: center;
 }
 
 .visit-message {
-    background-color: #f4a261;
-    color: #1a2e40;
+    background: #F4A261;
+    color: #1A2E40;
     font-weight: 700;
     text-align: center;
     padding: 0.8rem;
     border-radius: 6px;
     margin: 1rem;
-    font-family: var(--heading-font);
+    font-family: 'Montserrat', sans-serif;
 }
 
 .discover-intro {
@@ -495,7 +502,7 @@ dialog button {
 }
 
 .discover-card button {
-    background-color: var(--primary-color);
+    background: var(--primary);
     color: white;
     border: none;
     padding: 0.5rem 1rem;
@@ -505,10 +512,9 @@ dialog button {
 }
 
 .discover-card button:hover {
-    background-color: var(--secondary-color);
+    background: var(--secondary);
 }
 
-/* Animations */
 @keyframes cardEntrance {
     from {
         transform: translateX(50px) scale(0.9);
@@ -521,7 +527,6 @@ dialog button {
     }
 }
 
-/* Footer */
 footer {
     margin-top: 2rem;
     padding: 1.5rem 1rem;
@@ -551,35 +556,28 @@ footer .grid>div {
     gap: 1rem;
 }
 
-/* Responsive */
 @media (max-width: 600px) {
     #nav-button {
         display: block;
     }
-
     header {
         flex-wrap: wrap;
     }
-
     nav {
         display: none;
         width: 100%;
         margin-left: 0;
     }
-
     nav.open {
         display: block;
     }
-
     .navigation {
         flex-direction: column;
         gap: 0;
     }
-
     .join-container {
         grid-template-columns: 1fr;
     }
-
     #members.list .member-card {
         grid-template-columns: 70px 1fr;
     }
