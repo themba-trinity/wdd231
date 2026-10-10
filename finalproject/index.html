@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SADC Explorer - Discover Southern Africa | Home</title>
+    <meta name="description" content="Explore 15 SADC attractions with live weather, best time and recommendations">
+    <meta name="author" content="Thembinkosi Gumbo">
+    <link rel="icon" href="iamges/favicon.jpg">
+    <meta property="og:title" content="SADC Explorer">
+    <meta property="og:description" content="Discover 15 top SADC destinations">
+    <meta property="or:image" content="images/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Monserrat:wght@600;700&family=opens+sans:wght@400&display=swap"
+        rel="stylesheet">
+
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/larger.css">
+        <link rel="stylesheet" href="styles/small.css">
+
+        <script type="module" src="scripts/home.js"></script>
+        <script type="module" src="scripts/navigation.js"></script>
+        <script type="module" src="scripts/dates"></script>
+</head>
+
+<body>
+    <header>
+        <img src="iamges/sadc-logo.webp" alt="SADC logo" width="40" height="40" loading="lazy">
+        <span>SADC Explorer</span>
+        <button id="navBtn" class="hamburger" aria-label="navigation">&#9776;</button>
+        <nav id="nav">
+            <ul class="navigation">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="destinations.html">Destination</a></li>
+                <li><a href="plan-trip.html">Plan Trip</a></li>
+
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <section class="hero">
+            <img src="images/hero-large.webp" alt="Quadrypoint Zambezi River" width="1200" height="600"
+                loading="lazy">
+            <div class="hero-text">
+                <h1>Discover SADC Countries, One Adventure</h1>
+                <p>From Cape Town to Victoria Falls</p><a href="destinations.html" class="cta">Start Exploring</a>
+            </div>
+
+        </section>
+        <h2>Featured Destination + Live Weather</h2>
+        <div id="featured" class="grid"></div>
+        <section class="why">
+            <h2>Why SADC?</h2>
+            <p>Different Countries in the region, Big Five safaris, Heritage sites, Beaches and rich cultures.</p>
+
+        </section>
+        <div id="featured" class="grid"></div>
+        <dialog id="attractionsModal">
+            <div id="modalContent"></div>
+            <button id="closeModal">X Close</button>
+        </dialog>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://github.com/themba-trinity" target="_blank"><img src="images/github.svg" alt="GitHub"
+                    width="32" height="32"></a>
+            <a href="https://linkedin.com/thembinkosi-g-5478a8188" target="_blank"><img src="images/linkedin-icon.jpg"
+                    alt="Linkedin" width="32" height="32"></a>
+            <a href="https://instagram.com/Themba Trinity" target="_blank"><img src="images/instagram-icon.jpg"
+                    alt="Instagram" width="32" height="32"></a>
+            <a href="https://facebook.com/Themba Trinity" target="_blank"><img src="images/facebook-icon.jpg" alt="Facebook"
+                    width="32" height="32"></a>
+
+        </div>
+        <p>&copy; <span id="currentyear"></span> Thembinkosi Gumbo - South Africa</p>
+        <p id="lastModified"></p>
+
+    </footer>
+
+</body>
+
+</html>

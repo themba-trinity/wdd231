@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SADC Explorer - Discover Southern Africa | Home</title>
+    <meta name="description" content="Explore 15 SADC attractions with live weather, best time and recommendations">
+    <meta name="author" content="Thembinkosi Gumbo">
+    <link rel="icon" href="iamges/favicon.jpg">
+    <meta property="og:title" content="SADC Explorer">
+    <meta property="og:description" content="Discover 15 top SADC destinations">
+    <meta property="or:image" content="images/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Monserrat:wght@600;700&family=opens+sans:wght@400&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/larger.css">
+        <link rel="stylesheet" href="styles/small.css">
+
+        <script type="module" src="scripts/navigation.js"></script>
+        <script type="module" src="scripts/plan-trip.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="iamges/sadc-logo.webp" alt="SADC logo" width="40" height="40" loading="lazy">
+        <span>SADC Explorer</span>
+        <button id="navBtn" class="hamburger" aria-label="navigation">&#9776;</button>
+        <nav id="navBtn">
+            <ul class="navigation">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="destinations.html">Destination</a></li>
+                <li><a href="plan-trip.html">Plan Trip</a></li>
+
+            </ul>
+        </nav>
+
+    </header>
+    <main class="plan-main">
+        <h1>Plan Your Trip</h1>
+        <div class="plan-grid">
+            <section>
+                <h2>Your Wishlist (<span id="wishCount">0</span>)</h2>
+                <div id="wishlist"></div>
+                <button id="clearWishlist">Clear Wishlist</button>
+                <h2>Travel Tips</h2>
+                <ul>
+                    <li>Visa: Most SADC visa-free for 90 days</li>
+                    <li>Currency: Rand, Pula, Namibian Dollar, Metical, US Dollar, Kwacha</li>
+                    <li>Best time: May-Oct dry season</li>
+                    <li>Safety: Use registered guides, malaria pills for parks</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Inquiry Form</h2>
+                <form method="get" action="thankyou.html" id="tripForm" class="form">
+                <label>First Name*<input type="text" name="firstName" required autocomplete="given-name"
+                        title="First Name"></label>
+                <label>Last Name*<input type="text" name="lastName" required autocomplete="family-name"
+                        title="Last Name"></label>
+                <label>Email*<input type="email" name="email" required autocomplete="email"
+                        placeholder="kerryj@email.com" title="Email"></label>
+                <label>Phone<input type="tel" name="phone" autocomplete="tel" title="Phone"></label>
+                <label>Travel Date<input type="date" name="date" title="Travel date"></label>
+                <label>Country Of Interest
+                    <select name="interest">
+                        <option value="">Select</option>
+                        <option>South Africa</option>
+                        <option>Botswana</option>
+                        <option>Namibia</option>
+                        <option>MOzambique</option>
+                        <option>Zimbabwe</option>
+                        <option>Zambia</option>
+                        <option>Lesotho</option>
+                        </select>
+                        </label>
+                        <label>Message<textarea name="message" rows="4" title="Your Message"></textarea></label>
+                        <label><input type="checkbox" name="newsletter" value="yes">Subscribe to Newsletter</label>
+                        <input type="hidden" name="timestamp" id="timestamp">
+                        <input type="submit" value="Send Inquiry" class="submit">
+                        </form>
+                        <h2>Newsletter</h2>
+                        <form id="newsForm" class="form">
+                            <label>Email<input type="email" id="newsEmail" required placeholder="newsletter@email.com"></label>
+                            <input type="submit" value="Subscribe" class="submit">
+                            <p id="newsMsg"></p>
+
+                        </form>
+            </section>
+
+        </div>
+
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://github.com/themba-trinity" target="_blank"><img src="images/github.svg" alt="GitHub"
+                    width="32" height="32"></a>
+            <a href="https://linkedin.com/thembinkosi-g-5478a8188" target="_blank"><img src="images/linkedin-icon.jpg"
+                    alt="Linkedin" width="32" height="32"></a>
+            <a href="https://instagram.com/Themba Trinity" target="_blank"><img src="images/instagram-icon.jpg"
+                    alt="Instagram" width="32" height="32"></a>
+            <a href="https://facebook.com/Themba Trinity" target="_blank"><img src="images/facebook-icon.jpg" alt="Facebook"
+                    width="32" height="32"></a>
+
+        </div>
+        <p>&copy; <span id="currentyear"></span> Thembinkosi Gumbo - South Africa</p>
+        <p id="lastModified"></p>
+
+    </footer>
+
+</body>
+
+</html>
