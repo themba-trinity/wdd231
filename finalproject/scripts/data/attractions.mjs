@@ -20,7 +20,7 @@ export const attractions = [
     {
         "id": 3, "name": "Okavango Delta", "country": "Botswana", "code": "BW",
         "location": "Maun, Botswana", "category": "Wildlife",
-        "image": "images/okavango-delta.webp", "lat": -19.3958, "lon": 22.9144,
+        "image": "images/okovango-delta.webp", "lat": -19.3958, "lon": 22.9144,
         "bestTime": "May - Oct", "activities": ["Mokoro Safari", "Game Drive", "Birding"],
         "description": "World's largest inland delta with incredible wildlife year-round.",
         "expect": "Elephants, lions, wild dogs. Luxury lodges, no roads, only water channels.",
@@ -29,7 +29,7 @@ export const attractions = [
     {
         "id": 4, "name": "Sossusvlei Dunes", "country": "Namibia", "code": "NA",
         "location": "Namib Desert, Namibia", "category": "Adventure",
-        "image": "images/sossusvlei-dunes.webp", "lat": -24.7391, "lon": 15.2924,
+        "image": "images/sossusvlei-dunes.jpg", "lat": -24.7391, "lon": 15.2924,
         "bestTime": "Apr - Oct", "activities": ["Dune Climbing", "Photography", "Balloon"],
         "description": "Highest sand dunes in the world, some 300m tall, deep red color.",
         "expect": "Extreme heat by noon. Climb Big Daddy at sunrise for best photos.",
@@ -99,13 +99,20 @@ export const attractions = [
         "recommendation": "Do Franschhoek Wine Tram. Book Le Petit Chef."
     },
     {
-        "id": 12, "name": "Blue Lagoon", "country": "Eswatini", "code": "SZ",
-        "location": "Hlane, Eswatini", "category": "Wildlife",
-        "image": "images/blue-lagoon.webp", "lat": -26.2805, "lon": 31.8928,
-        "bestTime": "May - Sep", "activities": ["Rhino Walk", "Game Drive", "Culture"],
-        "description": "Home to largest rhino herds, guided walks with rhinos on foot.",
-        "expect": "Walk with rhinos 2m away with armed rangers. Very safe and thrilling.",
-        "recommendation": "Combine with Swazi cultural village. Support rhino conservation."
+        "id": 16,
+        "name": "Lake Kariba",
+        "country": "Zimbabwe / Zambia",
+        "code": "ZW",
+        "location": "Kariba Town, Zimbabwe - Siavonga, Zambia",
+        "image": "images/kariba-dam.jpg",
+        "lat": -16.5211,
+        "lon": 28.7994,
+        "bestTime": "Apr - Oct",
+        "category": "Beach",
+        "description": "World's largest man-made lake by volume, 223km long. Created in 1958 by Kariba Dam wall, offering houseboats, fishing, and incredible sunsets.",
+        "expect": "Houseboat safari, Tiger fishing, elephants swimming between islands, 1000+ hippos, no roads - only boats. Very hot Oct-Nov, calm water Apr-Sep. Load-shedding free solar lodges.",
+        "recommendation": "Book 3-night houseboat minimum - Matusadona side best for wildlife. Bring fishing gear for Tiger fish. Sunset cruise a must. Combine with Mana Pools 1hr away.",
+        "activities": ["Houseboat Safari", "Tiger Fishing", "Sunset Cruise", "Game Viewing"]
     },
     {
         "id": 13, "name": "Lesotho Highlands", "country": "Lesotho", "code": "LS",

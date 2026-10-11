@@ -1,4 +1,4 @@
-import { attractions } from "../data/attractions.mjs";
+import { attractions } from "./data/attractions.mjs";
 
 const container = document.getElementById("destinations");
 const modal = document.getElementById("attraction");
@@ -25,25 +25,24 @@ function display(list) {
         card.classList.add("card");
 
         card.innerHTML = `
-    <img src="${item.image}"
-         alt="${item.name}"
-         loading="lazy"
-         width="400"
-         height="250">
+            <img src="${item.image}"
+                 alt="${item.name}"
+                 loading="lazy"
+                 width="400"
+                 height="250">
 
-    <h3>${item.name}</h3>
+            <h3>${item.name}</h3>
 
-    <p class="meta">
-       <p>${item.description}</p>
+            <p class="description">${item.description}</p>
 
-    <button class="learnBtn" data-id="${item.id}">
-        Learn More
-    </button>
+            <button class="learnBtn" data-id="${item.id}">
+                Learn More
+            </button>
 
-    <button class="wishBtn" data-id="${item.id}">
-        ♡ Save
-    </button>
-`;
+            <button class="wishBtn" data-id="${item.id}">
+                ♡ Save
+            </button>
+        `;
 
         container.appendChild(card);
     });
@@ -53,53 +52,48 @@ function display(list) {
 
 // Add button events
 function addCardEvents() {
-
     document.querySelectorAll(".learnBtn").forEach(button => {
-
         button.addEventListener("click", event => {
+            const id = Number(event.currentTarget.dataset.id);
 
-            const id = Number(event.target.dataset.id);
-
-            const item = allData.find(
-                attraction => attraction.id === id
-            );
-
+            const item = allData.find(attraction => attraction.id === id);
             if (!item) return;
 
             modalContent.innerHTML = `
-    <h2>${item.name}</h2>
+                <h2>${item.name}</h2>
 
-    <img
-        src="${item.image}"
-       /strong> ${item.location}</p>
+                <img src="${item.image}"
+                     alt="${item.name}"
+                     loading="lazy"
+                     width="400"
+                     height="250">
 
-    <p><strong>Country:</strong> ${item.country}</p>
+                <p><strong>Location:</strong> ${item.location}</p>
 
-    <p><strong>Best Time:</strong> ${item.bestTime}</p>
+                <p><strong>Country:</strong> ${item.country}</p>
 
-    <p><strong>Activities:</strong> ${item.activities.join(", ")}</p>
+                <p><strong>Best Time:</strong> ${item.bestTime}</p>
 
-    <p><strong>What to Expect:</strong> ${item.expect}</p>
+                <p><strong>Activities:</strong> ${item.activities.join(", ")}</p>
 
-    <p><strong>Recommendation:</strong> ${item.recommendation}</p>
+                <p><strong>What to Expect:</strong> ${item.expect}</p>
 
-    <p>${item.description}</p>
-`;
+                <p><strong>Recommendation:</strong> ${item.recommendation}</p>
+
+                <p>${item.description}</p>
+            `;
+
             modal.showModal();
         });
     });
 
     document.querySelectorAll(".wishBtn").forEach(button => {
-
         button.addEventListener("click", event => {
+            const id = Number(event.currentTarget.dataset.id);
 
-            const id = Number(event.target.dataset.id);
-
-            let saved =
-                JSON.parse(localStorage.getItem("sadcWishlist")) || [];
+            let saved = JSON.parse(localStorage.getItem("sadcWishlist")) || [];
 
             if (!saved.includes(id)) {
-
                 saved.push(id);
 
                 localStorage.setItem(
@@ -107,7 +101,7 @@ function addCardEvents() {
                     JSON.stringify(saved)
                 );
 
-                event.target.textContent = "✓ Saved";
+                event.currentTarget.textContent = "✓ Saved";
             }
         });
     });
@@ -115,9 +109,7 @@ function addCardEvents() {
 
 // Filters
 document.querySelectorAll(".filters button").forEach(button => {
-
     button.addEventListener("click", () => {
-
         document
             .querySelectorAll(".filters button")
             .forEach(btn => btn.classList.remove("active"));
