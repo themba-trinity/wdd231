@@ -38,7 +38,7 @@ export const attractions = [
     {
         "id": 5, "name": "Bazaruto Archipelago", "country": "Mozambique", "code": "MZ",
         "location": "Vilankulo, Mozambique", "category": "Beach",
-        "image": "images/bazaruto-archipelego.webp", "lat": -21.6538, "lon": 35.4789,
+        "image": "images/bazaruto-archipelago.webp", "lat": -21.6538, "lon": 35.4789,
         "bestTime": "May - Nov", "activities": ["Diving", "Snorkeling", "Dhow Safari"],
         "description": "5 pristine islands with white sand, dugongs, and coral reefs.",
         "expect": "Luxury lodges, turquoise water, fresh seafood. Remote and peaceful.",
@@ -128,7 +128,7 @@ export const attractions = [
     {
         "id": 15, "name": "Gonarezhou National Park", "country": "Zimbabwe", "code": "ZW",
         "location": "Chiredzi, Zimbabwe", "category": "Wildlife",
-        "image": "images/gonarenzou-national-park.webp", "lat": -21.6785, "lon": 31.5892,
+        "image": "images/gonarezhou-national-park.webp", "lat": -21.6785, "lon": 31.5892,
         "bestTime": "Jun - Oct", "activities": ["Wilderness Safari", "Chilo Cliffs", "Birding"],
         "description": "Place of Elephants - remote, wild, 400 bird species, Chilojo Cliffs.",
         "expect": "No crowds, true wilderness. Elephants, wild dogs. Need 4x4.",

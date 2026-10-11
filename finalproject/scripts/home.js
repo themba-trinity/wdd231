@@ -1,7 +1,7 @@
 import { initNav } from "./attractions.mjs";
 
 const API_KEY = '4a8140506717263780bfb59245fc2a6d';
-const featureDiv = document.getElementById('feature');
+const featureDiv = document.getElementById('featured');
 const modal = document.getElementById('attractionsModal');
 const modalContent = document.getElementById('modalContent');
 
@@ -27,7 +27,7 @@ async function loadFeatured() {
                 const weather = await getWeather(item.lat, item.lon);
                 return `
           <section class="card">
-            <img src="${item.image}" alt="${item.name}" loading="lazy" width="400" height="250">
+            <img src="item.image" alt="${item.name}" loading="lazy" width="400" height="250">
             <h3>${item.name}</h3>
             <p class="meta">${item.country} | ${item.category}</p>
             <p class="weather">📍 ${item.location} | 🌤️ ${weather}</p>

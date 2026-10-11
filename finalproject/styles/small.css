@@ -23,7 +23,7 @@ h1,
 h2,
 h3 {
     font-family: 'Montserrat', sans-serif;
-    color: var(--primary)
+    color: skyblue;
 }
 
 header {
@@ -50,7 +50,8 @@ header span {
 }
 
 nav {
-    display: none;
+    display: flex;
+    position: relative;
     background: #11202e
 }
 
