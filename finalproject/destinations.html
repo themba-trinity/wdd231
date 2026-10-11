@@ -10,11 +10,11 @@
     <link rel="icon" href="images/favicon.jpg">
     <meta property="og:title" content="SADC Explorer">
     <meta property="og:description" content="Discover 15 top SADC destinations">
-    <meta property="or:image" content="images/sadc-logo.webp">
+    <meta property="og:image" content="images/sadc-logo.webp">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=MonTserrat:wght@600;700&family=opens+sans:wght@400&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=opens+sans:wght@400&display=swap"
         rel="stylesheet">
-
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/small.css">
@@ -22,8 +22,9 @@
 
     <script type="module" src="scripts/home.js"></script>
     <script type="module" src="scripts/navigation.js"></script>
-    <script type="module" src="scripts/attractions.js"></script>
+
     <script type="module" src="scripts/destinations.js"></script>
+    <script type="module" src="scripts/dates.js"></script>
 </head>
 
 <body>
@@ -34,7 +35,7 @@
         <nav id="nav">
             <ul class="navigation">
                 <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="destinations.html">Destination</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
                 <li><a href="plan-trip.html">Plan Trip</a></li>
 
             </ul>
@@ -50,10 +51,11 @@
             <button data-filter="Adventure">Adventure</button>
             <button data-filter="Culture">Culture</button>
             <button data-filter="South Africa">South Africa</button>
-
-            <div id="destinations" class="grid"></div>
-
         </div>
+
+        <div id="destinations" class="grid"></div>
+
+
         <dialog id="attraction">
             <div id="modalContent"></div>
             <button id="closeModal">X Close</button>
@@ -69,8 +71,8 @@
                     alt="Linkedin" width="32" height="32"></a>
             <a href="https://instagram.com/Themba Trinity" target="_blank"><img src="images/instagram-icon.jpg"
                     alt="Instagram" width="32" height="32"></a>
-            <a href="https://facebook.com/Themba Trinity" target="_blank"><img src="images/facebook-icon.jpg" alt="Facebook"
-                    width="32" height="32"></a>
+            <a href="https://facebook.com/Themba Trinity" target="_blank"><img src="images/facebook-icon.jpg"
+                    alt="Facebook" width="32" height="32"></a>
 
         </div>
         <p>&copy; <span id="currentyear"></span> Thembinkosi Gumbo - South Africa</p>
@@ -78,6 +80,7 @@
 
     </footer>
 
+</body>
 </body>
 
 </html>
