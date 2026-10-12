@@ -1,18 +1,8 @@
 let allData = [];
 const container = document.getElementById('allCards');
-const modal = document.getElementById('atrractionsModal');
+const modal = document.getElementById('attractionsModal');
 const modalContent = document.getElementById('modalContent');
 
-async function fetchAttractions() {
-    try {
-        const res = await fetch('data/attractions.mjs');
-        if (!res.ok) throw new Error('Failed');
-        allData = await res.json();
-        display(allData);
-    } catch (error) {
-        container.innerHTML = `Error: ${error.message}`;
-    }
-}
 
 function display(list) {
     const html = list.map(item => `

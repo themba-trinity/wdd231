@@ -11,7 +11,7 @@ export const attractions = [
     {
         "id": 2, "name": "Victoria Falls", "country": "Zimbabwe / Zambia", "code": "ZW",
         "location": "Livingstone / Victoria Falls Town", "category": "Wildlife",
-        "image": "images/victoria-falls.webp", "lat": -17.9243, "lon": 25.8572,
+        "image": "images/victoria-falls.webp", "lat": -17.9244, "lon": 25.8572,
         "bestTime": "Feb - May", "activities": ["Safari", "Bungee", "Devil's Pool"],
         "description": "Largest waterfall in the world - Mosi-oa-Tunya, The Smoke that Thunders.",
         "expect": "1.7km wide, 108m drop, massive spray. Raincoat needed.",
