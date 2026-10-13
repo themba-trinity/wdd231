@@ -99,7 +99,7 @@ export const attractions = [
         "recommendation": "Do Franschhoek Wine Tram. Book Le Petit Chef."
     },
     {
-        "id": 16,
+        "id": 12,
         "name": "Lake Kariba",
         "country": "Zimbabwe / Zambia",
         "code": "ZW",

@@ -1,6 +1,6 @@
 import { initNav } from "./navigation.js";
 
-const API_KEY = "4a8140506717263780bfb59245fc2a6d";
+const API_KEY = "f4dc7fb97d0c2155db8ad90afdbf7e77";
 const featureDiv = document.getElementById("featured");
 const modal = document.getElementById("attractionsModal");
 const modalContent = document.getElementById("modalContent");
@@ -11,28 +11,36 @@ async function getWeather(lat, lon) {
             `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${API_KEY}`
         );
 
-        if (!res.ok) {
-            throw new Error(`HTTP Error ${res.status}`);
-        }
+        console.log("Status:", res.status);
 
-        const data = await res.mjs();
+        const data = await res.json();
+
+        console.log(data);
 
         return `${Math.round(data.main.temp)}°C ${data.weather[0].main}`;
+
     } catch (error) {
-        console.error("Weather Error:", error);
+        console.error(error);
         return "Weather unavailable";
+        /*featureDiv.innerHTML =
+            "<p>Error loading attractions.</p>";*/
     }
 }
+
+        
+    
+
 
 async function loadFeatured() {
     
     try {
         const attractionsModule = await import("../data/attractions.mjs");
-
+        console.log(attractionsModule);
         const data =
             attractionsModule.attractions ||
             attractionsModule.default ||
             [];
+        console.log(data);
 
         const featured = data.filter(item =>
             [1, 2, 3, 6, 8, 15].includes(item.id)
