@@ -1,4 +1,5 @@
 import { attractions } from "./data/attractions.mjs";
+import { getWeather } from "./weather.js";
 
 const container = document.getElementById("destinations");
 const modal = document.getElementById("attraction");

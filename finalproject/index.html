@@ -28,6 +28,7 @@
     <script type="module" src="scripts/navigation.js"></script>
     <script type="module" src="scripts/dates.js"></script>
     <script type="module" src="scripts/destinations.js"></script>
+    <script type="module" src="scripts/weathers.js"></script>
 </head>
 
 <body>
@@ -47,7 +48,8 @@
     </header>
     <main>
         <section class="hero">
-            <img src="images/hero-quadrypoint.webp" alt="Quadrypoint Zambezi River" width="1200" height="600" loading="lazy">
+            <img src="images/hero-quadrypoint.webp" alt="Quadrypoint Zambezi River" width="1200" height="600"
+                loading="lazy">
             <div class="hero-text">
                 <h1>Discover SADC Countries, One Adventure</h1>
                 <p>From Cape Town to Victoria Falls</p><a href="destinations.html" class="cta">Start Exploring</a>
@@ -61,8 +63,14 @@
             <p>Iconic destinations like Victoria Falls, Serengeti National Parks and Fish River Canyon offer
                 breathtaking landscapes and wild viewing opportunities. The region features rich cultural heritage like
                 Great Zimbabwe ruins in Zimbabwe providing insights into local traditions and history. Visitors can
-                engage in adventure sports including safaris in Okavango Delta. Different countries in one destination. </p>
+                engage in adventure sports including safaris in Okavango Delta. Different countries in one destination.
+            </p>
 
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <div id="weather-current"></div>
+            <div id="weather-forecast"></div>
         </section>
         <div id="featured" class="grid"></div>
         <dialog id="attractionsModal">
