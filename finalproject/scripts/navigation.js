@@ -1,11 +1,16 @@
 export function initNav() {
-    const menu = document.getElementById('navBtn');
-    const nav = document.getElementById('nav');
+    const menuButton = document.querySelector("#menu");
+    const nav = document.querySelector("#mainNav");
 
-    menu?.addEventListener('click', () => {
-        nav.classList.toggle('open');
+    menuButton.addEventListener("click", () => {
+        nav.classList.toggle("open");
+
+        if (nav.classList.contains("open")) {
+            menuButton.textContent = "✖";
+        } else {
+            menuButton.textContent = "☰";
+        }
     });
-
     const year = document.getElementById('currentyear');
     if (year) {
         year.textContent = new Date().getFullYear();

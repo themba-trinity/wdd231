@@ -9,14 +9,14 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0
+    padding: 0;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
     background: var(--bg);
     color: var(--text);
-    line-height: 1.6
+    line-height: 1.6;
 }
 
 h1,
@@ -28,55 +28,48 @@ h3 {
 
 header {
     display: flex;
-    align-items: center;
-    gap: 0.5rem;
+    justify-content: space-between;
     background: var(--primary);
     color: white;
-    padding: 0.8rem 1rem
+    padding: 0.8rem 1rem;
 }
 
 header span {
+    display: flex;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    flex: 1
+    justify-content: left;
 }
 
+/* Hamburger Button */
 #menu {
+    display: none;
     background: none;
     border: none;
     color: white;
-    font-size: 1.5rem;
-    cursor: pointer
-}
-
-nav {
-    display: flex;
-    position: relative;
-    background: #11202e
-}
-
-nav.open {
-    display: block
+    font-size: 2rem;
+    cursor: pointer;
 }
 
 .navigation {
-    list-style: none
+    list-style: none;
+    display: flex;
 }
 
 .navigation a {
     display: block;
     padding: 0.8rem 1rem;
     color: white;
-    text-decoration: none
+    text-decoration: none;
 }
 
 .navigation a.active,
 .navigation a:hover {
-    background: var(--secondary)
+    background: var(--secondary);
 }
 
 .hero {
-    position: relative
+    position: relative;
 }
 
 .hero img {
@@ -95,7 +88,7 @@ nav.open {
     padding: 1rem;
     border-radius: 8px;
     text-align: center;
-    width: 90%
+    width: 90%;
 }
 
 .cta {
@@ -106,7 +99,7 @@ nav.open {
     padding: 0.6rem 1.2rem;
     border-radius: 4px;
     text-decoration: none;
-    font-weight: 700
+    font-weight: 700;
 }
 
 .grid {
@@ -121,7 +114,7 @@ nav.open {
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    padding-bottom: 1rem
+    padding-bottom: 1rem;
 }
 
 .card img {
@@ -132,12 +125,12 @@ nav.open {
 }
 
 .card h3 {
-    padding: 0.5rem 1rem 0
+    padding: 0.5rem 1rem 0;
 }
 
 .card p {
     padding: 0 1rem;
-    font-size: 0.9rem
+    font-size: 0.9rem;
 }
 
 .card .meta {
@@ -153,7 +146,7 @@ nav.open {
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 4px;
-    cursor: pointer
+    cursor: pointer;
 }
 
 .card button:focus {
@@ -162,7 +155,7 @@ nav.open {
 }
 
 .card button:hover {
-    background: var(--secondary)
+    background: var(--secondary);
 }
 
 .weather {
@@ -170,7 +163,7 @@ nav.open {
     background: var(--bg);
     margin: 0.5rem 1rem;
     padding: 0.4rem;
-    border-radius: 4px
+    border-radius: 4px;
 }
 
 dialog {
@@ -180,11 +173,11 @@ dialog {
     max-width: 500px;
     width: 90%;
     margin: auto;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3)
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 dialog::backdrop {
-    background: rgba(0, 0, 0, 0.5)
+    background: rgba(0, 0, 0, 0.5);
 }
 
  dialog {
@@ -194,7 +187,7 @@ dialog::backdrop {
  }
 
 #modalContent {
-    padding: 1.5rem
+    padding: 1.5rem;
 }
 
 #closeModal {
@@ -204,14 +197,14 @@ dialog::backdrop {
     padding: 0.5rem 1rem;
     margin: 1rem;
     border-radius: 4px;
-    cursor: pointer
+    cursor: pointer;
 }
 
 .filters {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-    padding: 1rem
+    padding: 1rem;
 }
 
 .filters button {
@@ -219,7 +212,7 @@ dialog::backdrop {
     border: 1px solid var(--primary);
     background: white;
     border-radius: 20px;
-    cursor: pointer
+    cursor: pointer;
 }
 
 .filters button:active,
@@ -229,31 +222,31 @@ dialog::backdrop {
 
 .filters button.active {
     background: var(--primary);
-    color: white
+    color: white;
 }
 
 .plan-main {
-    padding: 1rem
+    padding: 1rem;
 }
 
 .plan-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2rem
+    gap: 2rem;
 }
 
 .form {
     background: white;
     padding: 1.5rem;
     border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1)
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .form label {
     display: block;
     margin-bottom: 1rem;
     font-weight: 600;
-    font-size: 0.9rem
+    font-size: 0.9rem;
 }
 
 .form input[type="text"],
@@ -266,15 +259,15 @@ dialog::backdrop {
     padding: 0.6rem;
     margin-top: 0.3rem;
     border: 1px solid #999;
-    border-radius: 4px
+    border-radius: 4px;
 }
 
 .form input:required {
-    border-left: 4px solid #d00000
+    border-left: 4px solid #d00000;
 }
 
 .form input:required:valid {
-    border-left: 4px solid var(--secondary)
+    border-left: 4px solid var(--secondary);
 }
 
 .submit {
@@ -286,22 +279,59 @@ dialog::backdrop {
     border-radius: 6px;
     font-weight: 700;
     cursor: pointer;
-    margin-top: 0.5rem
+    margin-top: 0.5rem;
 }
 
 .submit:hover {
-    background: var(--primary)
+    background: var(--primary);
 }
 
 @media (max-width: 600px) {
-    .grid {
-        grid-template-columns: 1fr;
 
+
+    #menu {
+        display: block;
     }
 
     header {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
+
+    nav {
+        display: none;
+        width: 100%;
+    }
+
+    nav.open {
+        display: block;
+    }
+
+    .navigation {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navigation a {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form input[type="text"],
+    .form input[type="email"],
+    .form input[type="tel"],
+    .form input[type="date"],
+    .form select,
+    .form textarea {
+        width: 100%;
+    }
+
+    .submit {
+        width: 100%;
     }
 }
 
@@ -311,12 +341,12 @@ footer {
     padding: 2rem;
     background: var(--primary);
     color: white;
-    margin-top: 2rem
+    margin-top: 2rem;
 }
 
 footer a {
     padding: 0.5rem;
-    color: var(--accent)
+    color: var(--accent);
 }
 
 .why {
@@ -324,5 +354,5 @@ footer a {
     text-align: center;
     background: white;
     margin: 1rem;
-    border-radius: 8px
+    border-radius: 8px;
 }
