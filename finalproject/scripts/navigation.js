@@ -1,14 +1,16 @@
 export function initNav() {
     const menuButton = document.querySelector("#menu");
-    const nav = document.querySelector("#mainNav");
+    const nav = document.querySelector("nav");
 
     menuButton.addEventListener("click", () => {
         nav.classList.toggle("open");
 
         if (nav.classList.contains("open")) {
             menuButton.textContent = "✖";
+            menuButton.style.transform = "rotate(180deg)";
         } else {
             menuButton.textContent = "☰";
+            menuButton.style.transform = "rotate(0deg)";
         }
     });
     const year = document.getElementById('currentyear');
