@@ -11,9 +11,6 @@
     margin: 0;
     padding: 0;
 }
-/* ==========================
-   ANIMATIONS
-========================== */
 
 @keyframes fadeIn {
     from {
@@ -91,8 +88,8 @@ header span {
     justify-content: left;
 }
 
-#menu {
-    display: flex;
+#navBtn {
+    display: none;
     margin-left: auto;
     background: none;
     border: none;
@@ -396,7 +393,7 @@ dialog::backdrop {
 @media (max-width: 600px) {
 
 
-    #menu {
+    #navBtn {
         display: block;
     }
 
